@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table ,tr,td{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="https://www.baltana.com/files/wallpapers-5/Prabhas-HD-Desktop-Wallpaper-18494.jpg" width="200px"> -->
+    <script>
+        let p=document.createElement('p');
+        p.innerText="Welcome to JavaScript DOM manipulation";
+        document.body.appendChild(p);
+    </script>
+    <script>
+        let div=document.createElement('div');
+        div.innerHTML="<h1>CHERRY</h1><h2>CHERRY</h2>"
+        document.body.appendChild(div);
+    </script>
+    <script>
+        let ul=document.createElement('ul');
+        let li1=document.createElement('li');
+        let li2=document.createElement('li');
+        let li3=document.createElement('li');
+        li1.innerText="Jashu";
+        li2.innerText="Sudha";
+        li3.innerText="Vijaya";
+
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+        document.body.appendChild(ul);
+    </script>
+    <script>
+        let table=document.createElement('table');
+        let tr1=document.createElement('tr');
+        let tr2=document.createElement('tr');
+        let td1=document.createElement('td');
+        let td2=document.createElement('td');
+        let td3=document.createElement('td');
+        let td4=document.createElement('td');
+        td1.innerText="Jashu";
+        td2.innerText="21";
+        td3.innerText="Prathap";
+        td4.innerText="48";
+        tr1.appendChild(td1);
+        tr1.appendChild(td2);
+        tr2.appendChild(td3);
+        tr2.appendChild(td4);
+        table.appendChild(tr1);
+        table.appendChild(tr2);
+        document.body.appendChild(table)
+    </script>
+    <!-- <script>
+        let div1=document.createElement('div');
+        let image=document.images;
+        div1.appendChild(image);
+        document.body.appendChild(div1);
+    </script> -->
+    <script>
+        let ol=document.createElement('ol');
+        let ol2=document.createElement('ol');
+        let ol1=document.createElement('li');
+        let list=document.createElement('li');
+        let list1=document.createElement('li');
+        let list2=document.createElement('li');
+        ol1.innerText="Snacks";
+        list1.innerText="Biscuits";
+        list2.innerText="Ice Cream";
+        list.innerText="Tea";
+        ol1.appendChild(ol2);
+        ol2.appendChild(list1);
+        ol2.appendChild(list2);
+        ol.appendChild(ol1);
+        ol.appendChild(list);
+        document.body.appendChild(ol);
+    </script>
+    <script>
+        let section=document.createElement('section');
+        section.innerHTML="<h2>JASHU</h2><p>Jashu</p>"
+        document.body.appendChild(section);
+    </script>
+</body>
+</html>
